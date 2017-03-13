@@ -42,9 +42,16 @@
                 <img v-bind:src="'img/' + items.id +'.jpg'" v-bind:id="items.id">
               </div>
             </div>
+            <div v-else>
+              <div class="col-sm-12">
+                {{ items.id }} <br>
+                {{ items.thumb }} <br>
+                <img v-bind:src="'img/' + items.id +'.jpg'" v-bind:id="items.id">
+              </div>
+            </div>
           </div>
           <!-- list view -->
-          <div v-else>list view</div>
+          
         </li>
       </li>
     </ul>
