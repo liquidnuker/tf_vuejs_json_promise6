@@ -29,16 +29,18 @@
       </li>
     </div>
     <div id="app" class="app">
-      <ul id="galleryContainer">
+      <ul>
         <li v-if="loading" id="loader">loading...</li>
         <li v-else>
           <!-- loading false -->
           <!-- grid view -->
-          <div v-if="grid" v-for="items in sharedState.message">
-            <div class="col-sm-12 col-sm-4">
-              {{ items.id }} <br>
-              {{ items.thumb }} <br>
-              <img v-bind:src="'img/' + items.id +'.jpg'" v-bind:id="items.id">
+          <div id="galleryContainer">
+            <div v-if="grid" v-for="items in sharedState.message">
+              <div class="col-sm-12 col-sm-4">
+                {{ items.id }} <br>
+                {{ items.thumb }} <br>
+                <img v-bind:src="'img/' + items.id +'.jpg'" v-bind:id="items.id">
+              </div>
             </div>
           </div>
           <!-- list view -->
