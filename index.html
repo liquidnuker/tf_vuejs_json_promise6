@@ -10,10 +10,15 @@
     float:left;
     width:50%;
     }
+    .toggleView {
+    margin-bottom: 20px;
+    }
     </style>
     <link rel="stylesheet" href="dist/index.bundle.css">
   </head>
   <body>
+    <br>
+    <p id="toggleView" class="toggleView">toggle grid/list view</p>
     <p id="filterSpecies">filterSpecies</p>
     <div id="paginator"></div>
     <div id="descriptionBox" class="descriptionBox">
@@ -33,19 +38,18 @@
           <!-- list view -->
           <div v-else>list view</div>
         </li>
-        </li>
-      </ul>
-    </div>
-    <div id="app2" class="app2">
-      <ul>
-        <li v-for="items in sharedState.message">
-          {{ items.species }} <br>
-          {{ items.value }}
-        </li>
-      </ul>
-    </div>
-
-     <script src="dist/vendor.bundle.js"></script> 
-    <script src="dist/index.bundle.js"></script>
-  </body>
+      </li>
+    </ul>
+  </div>
+  <div id="app2" class="app2">
+    <ul>
+      <li v-for="items in sharedState.message">
+        {{ items.species }} <br>
+        {{ items.value }}
+      </li>
+    </ul>
+  </div>
+  <script src="dist/vendor.bundle.js"></script>
+  <script src="dist/index.bundle.js"></script>
+</body>
 </html>

@@ -2387,6 +2387,8 @@ __WEBPACK_IMPORTED_MODULE_3__js_jsonLoader_js__["a" /* jsonLoader */].getJSON(js
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__js_paginator_js__["a" /* showPages */])();
       });
     });
+
+    $("#toggleView").on("click", function () {});
   };
 
   if (document.readyState !== "loading") start();else if (document.addEventListener) document.addEventListener("DOMContentLoaded", start);else document.attachEvent("onreadystatechange", function () {

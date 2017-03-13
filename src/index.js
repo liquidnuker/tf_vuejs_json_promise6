@@ -29,6 +29,10 @@ jsonLoader.getJSON(jsonUrl).then(function (response) {
         showPages();
       });
     });
+
+    $("#toggleView").on("click", function () {
+      
+    });
   };
 
   if (document.readyState !== "loading") start();
