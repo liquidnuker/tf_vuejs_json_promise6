@@ -2388,7 +2388,9 @@ __WEBPACK_IMPORTED_MODULE_3__js_jsonLoader_js__["a" /* jsonLoader */].getJSON(js
       });
     });
 
-    $("#toggleView").on("click", function () {});
+    $("#toggleView").on("click", function () {
+      __WEBPACK_IMPORTED_MODULE_2__js_vue_components_js__["a" /* vmA */].grid = !__WEBPACK_IMPORTED_MODULE_2__js_vue_components_js__["a" /* vmA */].grid;
+    });
   };
 
   if (document.readyState !== "loading") start();else if (document.addEventListener) document.addEventListener("DOMContentLoaded", start);else document.attachEvent("onreadystatechange", function () {

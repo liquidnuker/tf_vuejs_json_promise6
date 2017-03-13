@@ -31,7 +31,7 @@ jsonLoader.getJSON(jsonUrl).then(function (response) {
     });
 
     $("#toggleView").on("click", function () {
-      
+      vmA.grid = !vmA.grid;
     });
   };
 
