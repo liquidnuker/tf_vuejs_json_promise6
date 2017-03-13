@@ -44,14 +44,13 @@
             </div>
             <div v-else>
               <div class="col-sm-12">
-                {{ items.id }} <br>
-                {{ items.thumb }} <br>
                 <img v-bind:src="'img/' + items.id +'.jpg'" v-bind:id="items.id">
+                {{ items.id }}<br>
+                {{ items.thumb }}
               </div>
             </div>
           </div>
           <!-- list view -->
-          
         </li>
       </li>
     </ul>
