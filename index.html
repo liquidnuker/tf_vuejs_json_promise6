@@ -26,10 +26,13 @@
     <div id="app" class="app">
       <ul id="galleryContainer">
         <li v-if="loading" id="loader">loading...</li>
-        <li v-else v-for="items in sharedState.message">
-          {{ items.id }} <br>
-          {{ items.thumb }} <br>
-          <img v-bind:src="'img/' + items.id +'.jpg'" v-bind:id="items.id">
+        <li v-else>
+          <!-- loading false -->
+          <!-- grid view -->
+          <div v-if="grid">grid view</div>
+          <!-- list view -->
+          <div v-else>list view</div>
+        </li>
         </li>
       </ul>
     </div>

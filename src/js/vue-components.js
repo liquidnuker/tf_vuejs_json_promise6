@@ -8,7 +8,8 @@ const vmA = new Vue({
   data: {
     privateState: {},
     sharedState: store.state,
-    loading: true
+    loading: true,
+    grid: true
   },
   methods: {}
 });
