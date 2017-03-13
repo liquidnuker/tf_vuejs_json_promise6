@@ -34,7 +34,13 @@
         <li v-else>
           <!-- loading false -->
           <!-- grid view -->
-          <div v-if="grid">grid view</div>
+          <div v-if="grid" v-for="items in sharedState.message">
+            <div class="col-sm-12 col-sm-4">
+              {{ items.id }} <br>
+              {{ items.thumb }} <br>
+              <img v-bind:src="'img/' + items.id +'.jpg'" v-bind:id="items.id">
+            </div>
+          </div>
           <!-- list view -->
           <div v-else>list view</div>
         </li>
