@@ -9,7 +9,7 @@ module.exports = {
   context: path.resolve(__dirname, './src'),
   entry: {
     index: './index.js',
-    vendor: ['jquery', 'underscore']
+    vendor: ['jquery', 'lodash']
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -54,7 +54,7 @@ module.exports = {
   resolve: {
     modules: [
       'D:/WINDOWS/GD2/web/dev/_npm/libs/jquery_3.1.1/node_modules',
-      'D:/WINDOWS/GD2/web/dev/_npm/utils/underscore_1.8.3/node_modules'
+      'D:/WINDOWS/GD2/web/dev/_npm/utils/lodash_4.17.4/node_modules'
     ]
   }
 };

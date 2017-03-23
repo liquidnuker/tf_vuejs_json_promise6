@@ -1,5 +1,5 @@
 import {store} from "./store.js";
-import {where} from "underscore";
+import {filter} from "lodash";
 
 const jsonFilter = {
   filter: (speciesToFilter) => {
@@ -11,7 +11,7 @@ const jsonFilter = {
       // }, "bundleName");
       
       // debugger
-      store.state.message = where(store.state.message, {
+      store.state.message = filter(store.state.message, {
         species: speciesToFilter
       });
 
@@ -28,7 +28,7 @@ const jsonFilter = {
     });
   },
   filterId: (idToFilter) => {
-    store.state.filteredId = where(store.state.message, {
+    store.state.filteredId = filter(store.state.message, {
       id: idToFilter
     });
     console.log(store.state.filteredId);
